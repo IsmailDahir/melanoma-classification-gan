@@ -18,16 +18,28 @@ The project was developed using Python 3.9 and leveraged several key machine lea
 ## 📊 Datasets
 
 The primary dataset used for this study was the SIIM-ISIC 2020 Melanoma Classification dataset, available on Kaggle. It contains over 33,000 dermoscopic images, but only approximately 1.7% of them are labeled as melanoma, presenting a significant class imbalance challenge. This dataset was selected due to its clinical relevance, metadata richness, and scale. It provided a reliable foundation for training and evaluating the deep learning models. The project also considered the potential integration of additional datasets such as HAM10000, PH2, and Fitzpatrick17k, to increase diversity and support future development.
-![image](https://github.com/user-attachments/assets/1f3d40d3-664f-4391-b897-3032e45993d4)
+
+
+![image](https://github.com/user-attachments/assets/82b5c5b5-f0c6-4690-85ec-1a48a51d79b4)
+
 
 
 ## ⚙️ Methodology
 
 The methodology employed in this project followed a structured software development life cycle with Agile principles. Initially, a comprehensive preprocessing pipeline was developed to ensure consistency in image dimensions and quality. All images were resized to 224x224 for CNN training and normalized appropriately. The cWGAN-GP was trained using only melanoma images to generate synthetic samples that reflected the minority class. This training involved feeding noise vectors and labels to the generator and training the critic (discriminator) to distinguish between real and generated images. After generating 1,000 synthetic images, they were integrated into the training set. A custom CNN classifier was trained twice: first on the original data, and again on the GAN-augmented dataset. Performance was evaluated using accuracy, precision, recall, and AUC, and further analyzed through ROC curves and training histories.
 
+![image](https://github.com/user-attachments/assets/b61dbc04-cf4a-4e7c-a8ae-a9b4aac6670d)
+
+
 ## 📈 Key Findings
 
 The key findings of this project demonstrate that using GAN-based data augmentation can significantly increase a model’s sensitivity to detecting melanoma cases. The recall rate improved from around 12% in the baseline model to 100% in the GAN-augmented model. However, this gain in sensitivity came at the cost of specificity and overall accuracy, leading to a rise in false positives. This tradeoff highlights the classic challenge in medical AI of balancing false negatives and false positives. While the GAN augmentation improved the model's ability to detect rare malignant cases, it also caused the model to misclassify some benign lesions. These findings underscore the need for further calibration and validation of such systems before clinical deployment.
+
+![image](https://github.com/user-attachments/assets/5750c943-fdb3-4b2f-9ce4-2eb65a5a85bc)
+
+
+![image](https://github.com/user-attachments/assets/44116a4e-70ce-4cbe-bfc0-50ab51c9541c)
+
 
 ## ❗ Limitations
 
