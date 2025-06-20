@@ -18,6 +18,8 @@ The project was developed using Python 3.9 and leveraged several key machine lea
 ## 📊 Datasets
 
 The primary dataset used for this study was the SIIM-ISIC 2020 Melanoma Classification dataset, available on Kaggle. It contains over 33,000 dermoscopic images, but only approximately 1.7% of them are labeled as melanoma, presenting a significant class imbalance challenge. This dataset was selected due to its clinical relevance, metadata richness, and scale. It provided a reliable foundation for training and evaluating the deep learning models. The project also considered the potential integration of additional datasets such as HAM10000, PH2, and Fitzpatrick17k, to increase diversity and support future development.
+![image](https://github.com/user-attachments/assets/1f3d40d3-664f-4391-b897-3032e45993d4)
+
 
 ## ⚙️ Methodology
 
