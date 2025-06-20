@@ -1,7 +1,7 @@
 
 # 🧠 Melanoma Image Classification & Synthetic Data Generation using Deep Learning & GANs
 
-This repository documents the development and implementation of a final year undergraduate project focused on the automated classification of melanoma from dermoscopic images. The project integrates a custom-designed Convolutional Neural Network (CNN) with a Conditional Wasserstein Generative Adversarial Network incorporating Gradient Penalty (cWGAN-GP). The primary goal of this initiative is to improve early melanoma detection by addressing the severe class imbalance inherent in dermatological imaging datasets through the generation of synthetic training samples.
+This repository documents the development and implementation of a deep learning pipeline designed to support the automated classification of melanoma from dermoscopic images. The project integrates a custom-designed Convolutional Neural Network (CNN) with a Conditional Wasserstein Generative Adversarial Network with Gradient Penalty (cWGAN-GP). It contributes to the growing field of AI-driven medical diagnostics by aiming to accurately distinguish between benign and malignant skin lesions, reduce the reliance on manual labelling, and strategically use generative AI to improve the quality and balance of training data. By enhancing both the accuracy and sensitivity of melanoma detection, the system supports earlier diagnosis and reduces the diagnostic burden on healthcare professionals. This report outlines the full development lifecycle from data acquisition and model design to evaluation and discusses the broader implications for medical image analysis and clinical practice.
 
 ## 📌 Project Objectives
 
@@ -56,6 +56,4 @@ This project is licensed under the MIT License – see the [LICENSE](LICENSE) fi
 ## 🙋‍♂️ Author
 
 **Ismail Dahir**  
-BSc Computer Science  
-Aston University, School of Informatics & Digital Engineering  
-Email: 220145705@aston.ac.uk
+
